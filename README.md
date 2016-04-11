@@ -7,6 +7,21 @@
 * material-ui
 * sails.js
 
+### Configure the presets 
+
+Your ```config/local.js``` file should look like this:
+
+```
+module.exports = {
+
+  babel: {
+    presets: ["react", "es2015", "stage-0"]
+  },
+  //Tell the grunt to wait a little more
+  hookTimeout: 30000
+}
+```
+
 ###Usage
 
 ```
